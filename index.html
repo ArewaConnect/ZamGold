@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamfara Gold Market - Premium Gold Trading</title>
+    <style>
+        /* ===== Global Styles ===== */
+        :root {
+            --primary-color: #D4AF37; /* Gold color */
+            --secondary-color: #1A1A1A; /* Dark container */
+            --background-color: #dfd1d1; /* Darker background */
+            --text-color: #FFFFFF;
+            --accent-color: #FFD700;
+            --section-padding: 80px 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 97%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #3c1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgb(191 30 30 / 30%);
+    padding: 30px;
+    margin-bottom: -142px;
+        }
+        
+        h1, h2, h3, h4 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        /* ===== Header & Navigation ===== */
+        header {
+            background-color: rgb(167 124 124 / 90%);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    padding: 2px 0;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .logo span {
+            color: var(--text-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--text-color);
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+        
+        /* ===== Hero Section ===== */
+        #home {
+           height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: -40px;
+    margin-bottom: -157px;
+        }
+        
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        
+        .hero-content {
+            max-width: 836px;
+    padding: 7px;
+    background-color: rgb(40 26 26 / 80%);
+    border-radius: 8px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            text-decoration: none;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+        
+        /* ===== About Section ===== */
+        #about {
+            padding: var(--section-padding);
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .about-card {
+            background-color: rgb(155 229 224 / 26%);
+    padding: 26px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+        }
+        
+        .about-card h3 {
+            margin-bottom: 15px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .team-member {
+            text-align: center;
+        }
+        
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid var(--primary-color);
+        }
+        
+        /* ===== Products Section ===== */
+        #products {
+            padding: var(--section-padding);
+        }
+        
+        .product-categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .category-btn {
+            padding: 10px 20px;
+            background-color: rgb(155 229 224 / 26%);
+            border: none;
+            color: var(--text-color);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .category-btn.active, .category-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background-color: rgb(155 229 224 / 26%);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            margin-bottom: 10px;
+        }
+        
+        .product-info .price {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+        
+        /* ===== Services Section ===== */
+        #services {
+            padding: var(--section-padding);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background-color: rgb(155 229 224 / 26%);
+            padding: 30px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        /* ===== Market Updates Section ===== */
+        #market-updates {
+            padding: var(--section-padding);
+        }
+        
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        
+        .price-table th, .price-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .price-table th {
+            background-color: rgb(155 229 224 / 26%);
+            color: var(--primary-color);
+        }
+        
+        .price-table tr:hover {
+            background-color: rgba(212, 175, 55, 0.05);
+        }
+        
+        /* ===== Projects Section ===== */
+        #projects {
+            padding: var(--section-padding);
+        }
+        
+        .project-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .project-tab {
+            padding: 10px 20px;
+           background-color: rgb(155 229 224 / 26%);
+            border: none;
+            color: var(--text-color);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .project-tab.active, .project-tab:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+        
+        .project-content {
+            display: none;
+        }
+        
+        .project-content.active {
+            display: block;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background-color: rgb(155 229 224 / 26%);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .project-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .project-details {
+            padding: 20px;
+        }
+        
+        /* ===== Testimonials Section ===== */
+        #testimonials {
+            padding: var(--section-padding);
+        }
+        
+        .testimonial-slider {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .testimonial {
+            background-color: rgb(155 229 224 / 26%);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            display: none;
+        }
+        
+        .testimonial.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .testimonial .quote {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial .author {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+        
+        .testimonial-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-dot.active, .testimonial-dot:hover {
+            background-color: var(--primary-color);
+        }
+        
+        /* ===== Blog Section ===== */
+        #blog {
+            padding: var(--section-padding);
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .blog-card {
+            background-color: rgb(155 229 224 / 26%);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .blog-content {
+            padding: 20px;
+        }
+        
+        .blog-content .date {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .blog-content h3 {
+            margin-bottom: 15px;
+        }
+        
+        .blog-content .excerpt {
+            margin-bottom: 15px;
+        }
+        
+        /* ===== Gallery Section ===== */
+        #gallery {
+            padding: var(--section-padding);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 250px;
+        }
+        
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img, .gallery-item:hover video {
+            transform: scale(1.1);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        /* ===== Contact Section ===== */
+        #contact {
+            padding: var(--section-padding);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            margin-top: 40px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 30px;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+        
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            color: var(--text-color);
+        }
+        
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .map-container {
+            height: 300px;
+            margin-top: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        /* ===== Partner Section ===== */
+        #partner {
+            padding: var(--section-padding);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .benefit-card {
+            background-color: rgb(155 229 224 / 26%);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .benefit-card h3 {
+            margin-bottom: 15px;
+        }
+        
+        /* ===== FAQ Section ===== */
+        #faq {
+            padding: var(--section-padding);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px 0;
+        }
+        
+        .faq-question h3 {
+            margin-bottom: 0;
+        }
+        
+        .faq-question .toggle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active .toggle {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-question.active + .faq-answer {
+            max-height: 500px;
+            padding-top: 15px;
+        }
+        
+        /* ===== Investor Section ===== */
+        #investor {
+            padding: var(--section-padding);
+        }
+        
+        .investor-model {
+            margin-top: 40px;
+        }
+        
+        .model-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .model-step {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .step-number {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .step-content {
+            flex-grow: 1;
+        }
+        
+        /* ===== Legal Section ===== */
+        #legal {
+            padding: var(--section-padding);
+        }
+        
+        .legal-content {
+            margin-top: 40px;
+        }
+        
+        .legal-section {
+            margin-bottom: 40px;
+        }
+        
+        .legal-section h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        /* ===== Footer ===== */
+        footer {
+            background-color: var(--secondary-color);
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-links a {
+            color: var(--text-color);
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* ===== Responsive Styles ===== */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--secondary-color);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 40px;
+                transition: all 0.5s ease;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Zamfara<span>Gold</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#market-updates">Market</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <video autoplay muted loop class="hero-video">
+            <source src="https://example.com/gold-market-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Zamfara's Premier Gold Marketplace</h1>
+            <p>Connecting ethical gold producers with global markets through transparent and secure transactions</p>
+            <a href="#products" class="btn">Explore Our Gold</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Zamfara Gold Market</h2>
+            <p>Founded in 2023, Zamfara Gold Market has quickly established itself as the most trusted platform for gold trading in Northern Nigeria. Our mission is to bring transparency, fairness, and professionalism to the gold trade while supporting local mining communities.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Our History</h3>
+                    <p>Starting as a small buying center in Gusau, we've grown into a full-service gold marketplace serving international buyers. Our journey began with a simple goal: to create a fair platform where miners receive proper value for their gold.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Our Vision</h3>
+                    <p>To become West Africa's leading digital gold marketplace by 2030, connecting at least 10,000 artisanal miners directly with global markets while maintaining the highest ethical standards.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Core Values</h3>
+                    <p><strong>Integrity:</strong> Every transaction is documented and transparent. <strong>Community:</strong> We reinvest 5% of profits into mining communities. <strong>Excellence:</strong> Only gold meeting our strict purity standards is traded.</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 50px;">Our Team</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/200" alt="CEO">
+                    <h4>Badumakhan</h4>
+                    <p>Founder & CEO</p>
+                    <p>15+ years in mineral trading</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/200" alt="Geologist">
+                    <h4>Dr. Aminu Sani</h4>
+                    <p>Chief Geologist</p>
+                    <p>PhD in Mineral Sciences</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/200" alt="Compliance Officer">
+                    <h4>Hauwa Ibrahim</h4>
+                    <p>Compliance Director</p>
+                    <p>Former EFCC investigator</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 50px;">Legal Compliance</h3>
+            <p>We operate with full authorization from all regulatory bodies:</p>
+            <ul style="margin-left: 20px; margin-bottom: 20px;">
+                <li>Registered with CAC: BN 123456789</li>
+                <li>SCUML Certified: AML/CFT compliant</li>
+                <li>MMSD Licensed Mineral Buyer</li>
+                <li>Member, Nigeria Miners Association</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <h2>Our Gold Products</h2>
+            <p>We offer a carefully curated selection of gold products meeting international standards. All our gold is ethically sourced with complete chain-of-custody documentation.</p>
+            
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="raw">Raw Gold</button>
+                <button class="category-btn" data-category="refined">Refined Gold</button>
+                <button class="category-btn" data-category="jewelry">Gold Jewelry</button>
+                <button class="category-btn" data-category="nuggets">Gold Nuggets</button>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card" data-category="raw">
+                    <img src="https://via.placeholder.com/400x300?text=Raw+Gold+Dust" alt="Raw Gold Dust" class="product-img">
+                    <div class="product-info">
+                        <h3>Raw Gold Dust</h3>
+                        <p>Direct from Zamfara mines, 18-22K purity. Comes with miner certification and origin documentation.</p>
+                        <div class="price">₦35,000/gram</div>
+                        <a href="http://api.whatsapp.com/send?phone=2348133839892%20Hello%20I'm%20Intersted%20to%20*BUY*%2018-22K%20Gold%20purity." class="btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="raw">
+                    <img src="https://via.placeholder.com/400x300?text=Alluvial+Gold" alt="Alluvial Gold" class="product-img">
+                    <div class="product-info">
+                        <h3>Alluvial Gold</h3>
+                        <p>River-mined gold with natural purity of 20-23K. Washed and graded by our experts.</p>
+                        <div class="price">₦38,000/gram</div>
+                        <a href="http://api.whatsapp.com/send?phone=2348133839892%20Hello%20I'm%20Intersted%20to%20*BUY*%2020-23K%20Gold%20purity." class="btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="refined">
+                    <img src="https://via.placeholder.com/400x300?text=24K+Gold+Bars" alt="24K Gold Bars" class="product-img">
+                    <div class="product-info">
+                        <h3>24K Gold Bars</h3>
+                        <p>Investment-grade 99.9% pure gold bars. Available in 10g, 50g, 100g, and 1kg sizes.</p>
+                        <div class="price">₦42,000/gram</div>
+                        <a href="#http://api.whatsapp.com/send?phone=2348133839892%20Hello%20I'm%20Intersted%20to%20*BUY*%2099.9%%20pure%20gold%20bars." class="btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="refined">
+                    <img src="https://via.placeholder.com/400x300?text=22K+Gold+Granules" alt="22K Gold Granules" class="product-img">
+                    <div class="product-info">
+                        <h3>22K Gold Granules</h3>
+                        <p>Ideal for jewelry makers. 91.6% purity, uniform 1-3mm granules.</p>
+                        <div class="price">₦39,500/gram</div>
+                        <a href="#contact" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="jewelry">
+
+                    <img src="C:\Certificate.jpg" alt="Traditional Hausa Jewelry" class="product-img">
+         
+                    <div class="product-info">
+                        <h3>Traditional Hausa Jewelry</h3>
+                        <p>Handcrafted 18K gold pieces by master artisans from Zamfara.</p>
+                        <div class="price">From ₦250,000</div>
+                        <a href="#contact" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="nuggets">
+                    <img src="https://via.placeholder.com/400x300?text=Natural+Gold+Nuggets" alt="Natural Gold Nuggets" class="product-img">
+                    <div class="product-info">
+                        <h3>Natural Gold Nuggets</h3>
+                        <p>Rare, unprocessed nuggets from Zamfara's gold belt. Collector's items.</p>
+                        <div class="price">From ₦500,000</div>
+                        <a href="#contact" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px; background-color: rgba(212, 175, 55, 0.1); padding: 20px; border-radius: 8px;">
+                <h3>Quality Assurance</h3>
+                <p>Every gold product undergoes rigorous testing:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>XRF Spectrometer analysis for purity</li>
+                    <li>Documented chain of custody</li>
+                    <li>Ethical sourcing verification</li>
+                    <li>Government royalty payments confirmed</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Gold Services</h2>
+            <p>Beyond trading, we offer comprehensive gold-related services to support miners, investors, and jewelry businesses.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Gold Appraisal</h3>
+                    <p>Professional valuation using XRF technology. Get accurate purity and market value assessments with detailed reports acceptable by banks and international buyers.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Buying & Selling</h3>
+                    <p>We purchase gold directly from licensed miners at fair prices and connect sellers with vetted global buyers through our secure platform.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Gold Refining</h3>
+                    <p>Upgrade your gold to 24K purity at our partner refinery. We handle everything from logistics to certification.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Storage</h3>
+                    <p>State-of-the-art vault facilities with 24/7 monitoring and insurance coverage for your gold holdings.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Consultancy & Brokerage</h3>
+                    <p>Expert guidance on gold investments, market trends, and regulatory compliance for new entrants.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Export Services</h3>
+                    <p>End-to-end export solutions including documentation, shipping, and customs clearance for international buyers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Updates Section -->
+    <section id="market-updates">
+        <div class="container">
+            <h2>Gold Market Updates</h2>
+            <p>Stay informed with the latest gold prices and market intelligence from Zamfara and global markets.</p>
+            
+            <h3 style="margin-top: 30px;">Today's Gold Prices</h3>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Purity</th>
+                        <th>Price/Gram (₦)</th>
+                        <th>Price/Ounce ($)</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Raw Gold Dust</td>
+                        <td>18-22K</td>
+                        <td>35,000</td>
+                        <td>1,850</td>
+                        <td style="color: #4CAF50;">↑ 1.2%</td>
+                    </tr>
+                    <tr>
+                        <td>Refined Gold (24K)</td>
+                        <td>99.9%</td>
+                        <td>42,000</td>
+                        <td>1,980</td>
+                        <td style="color: #4CAF50;">↑ 0.8%</td>
+                    </tr>
+                    <tr>
+                        <td>London Fix</td>
+                        <td>99.5%</td>
+                        <td>-</td>
+                        <td>1,950</td>
+                        <td style="color: #F44336;">↓ 0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Dubai Market</td>
+                        <td>99.9%</td>
+                        <td>-</td>
+                        <td>1,940</td>
+                        <td style="color: #4CAF50;">↑ 0.3%</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div style="margin-top: 50px;">
+                <h3>Market Analysis</h3>
+                <p><strong>Zamfara Gold Strengthens:</strong> Local prices rose 1.2% this week due to increased demand from Middle Eastern buyers and temporary supply constraints from rainy season mining slowdowns.</p>
+                <p><strong>Global Trend:</strong> International gold prices remain volatile amid US Fed rate hike speculation, creating arbitrage opportunities for Nigerian exporters.</p>
+            </div>
+            
+            <div style="margin-top: 30px; background-color: rgba(212, 175, 55, 0.1); padding: 20px; border-radius: 8px;">
+                <h3>Regulatory Update</h3>
+                <p>The Zamfara State Government has introduced new mining community development levies. All our transactions now include a 1% contribution to the Zamfara Mineral Development Fund, supporting local infrastructure and education.</p>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <h3>Investor Tip of the Week</h3>
+                <p>"With the Naira depreciation, holding physical gold provides excellent inflation hedging. Consider allocating 10-15% of your portfolio to gold products with high liquidity like our 24K bars." - Badumakhan, CEO</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Our Projects & Portfolio</h2>
+            <p>Explore our major transactions, community initiatives, and gold transformation processes.</p>
+            
+            <div class="project-tabs">
+                <button class="project-tab active" data-tab="sales">Major Sales</button>
+                <button class="project-tab" data-tab="refining">Refining Projects</button>
+                <button class="project-tab" data-tab="community">Community CSR</button>
+            </div>
+            
+            <div class="project-content active" id="sales">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x400?text=500kg+Export+to+Dubai" alt="500kg Export to Dubai" class="project-img">
+                        <div class="project-details">
+                            <h3>500kg Export to Dubai</h3>
+                            <p>Our largest single shipment to date, valued at $30M. Facilitated for a consortium of 15 Zamfara mining cooperatives with full traceability documentation.</p>
+                            <p><strong>Client:</strong> Al Ghurair Refinery</p>
+                            <p><strong>Date:</strong> March 2023</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x400?text=Lagos+Jewelry+Supply" alt="Lagos Jewelry Supply" class="project-img">
+                        <div class="project-details">
+                            <h3>Lagos Jewelry Supply Contract</h3>
+                            <p>Monthly supply of 10kg 22K gold granules to Nigeria's largest jewelry manufacturer.</p>
+                            <p><strong>Client:</strong> Aduni Gold Creations</p>
+                            <p><strong>Duration:</strong> Ongoing since 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-content" id="refining">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x400?text=Before+Refining" alt="Before Refining" class="project-img">
+                        <div class="project-details">
+                            <h3>Before Refining</h3>
+                            <p>Raw gold dust at 18K purity from Anka mines. Contains natural impurities and needs processing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x400?text=After+Refining" alt="After Refining" class="project-img">
+                        <div class="project-details">
+                            <h3>After Refining</h3>
+                            <p>The same gold transformed into 99.9% pure 24K bars ready for international markets.</p>
+                            <p><strong>Process:</strong> Aqua regia treatment + electrolysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-content" id="community">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x400?text=Miner+Training" alt="Miner Training" class="project-img">
+                        <div class="project-details">
+                            <h3>Artisanal Miner Training</h3>
+                            <p>Quarterly workshops on safe mining practices, gold valuation, and business skills for 200+ Zamfara miners.</p>
+                            <p><strong>Impact:</strong> 30% increase in miners' incomes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x400?text=School+Donation" alt="School Donation" class="project-img">
+                        <div class="project-details">
+                            <h3>Community School Support</h3>
+                            <p>Built 3 classrooms in Bukkuyum LGA from 2% of our 2022 profits.</p>
+                            <p><strong>Next Project:</strong> Health center in Anka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p>Trusted by miners, investors, and jewelry businesses across Africa and the Middle East.</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <img src="https://via.placeholder.com/150?text=Miners+Coop" alt="Miners Cooperative">
+                    <p class="quote">"Zamfara Gold Market pays fair prices on time and provides documentation that helps us avoid exploitation. Our cooperative's income has doubled since we started working with them."</p>
+                    <p class="author">- Alhaji Yusuf, Chairman Anka Miners Cooperative</p>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="https://via.placeholder.com/150?text=Jewelry+Maker" alt="Jewelry Maker">
+                    <p class="quote">"The consistent quality of their 22K granules saves us hours of refining work. Their documentation makes customs clearance a breeze for our exports to Europe."</p>
+                    <p class="author">- Chioma Okeke, CEO Aduni Gold Creations</p>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="https://via.placeholder.com/150?text=Investor" alt="Investor">
+                    <p class="quote">"I've been buying gold through Zamfara Gold Market for my portfolio since 2022. Their transparent pricing and secure storage give me peace of mind."</p>
+                    <p class="author">- Tunde Ogunlesi, Private Investor</p>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h2>Gold Insights & Education</h2>
+            <p>Learn about gold investment, market trends, and safe trading practices.</p>
+            
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/600x400?text=Gold+Investment" alt="Gold Investment" class="blog-img">
+                    <div class="blog-content">
+                        <p class="date">June 15, 2023</p>
+                        <h3>5 Reasons to Include Gold in Your Investment Portfolio</h3>
+                        <p class="excerpt">Learn how gold can hedge against inflation, currency devaluation, and market volatility in the Nigerian context.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/600x400?text=Gold+Scams" alt="Avoiding Gold Scams" class="blog-img">
+                    <div class="blog-content">
+                        <p class="date">May 28, 2023</p>
+                        <h3>How to Avoid Gold Scams in Nigeria</h3>
+                        <p class="excerpt">Red flags to watch for and verification steps to ensure you're buying genuine gold from reputable sellers.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/600x400?text=Zamfara+Gold" alt="Zamfara Gold" class="blog-img">
+                    <div class="blog-content">
+                        <p class="date">April 10, 2023</p>
+                        <h3>The Unique Qualities of Zamfara Gold</h3>
+                        <p class="excerpt">Why Zamfara's gold belt produces some of Africa's purest gold and what makes it special for jewelry making.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Our Gold Gallery</h2>
+            <p>Visual journey through our gold products, operations, and community impact.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400?text=Gold+Dust+Closeup" alt="Gold Dust Closeup">
+                    <div class="gallery-caption">Gold dust from our latest purchase</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400?text=Miners+at+Work" alt="Miners at Work">
+                    <div class="gallery-caption">Our partner miners in Zamfara</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400?text=XRF+Testing" alt="XRF Testing">
+                    <div class="gallery-caption">Purity testing with XRF spectrometer</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400?text=Gold+Bars" alt="Gold Bars">
+                    <div class="gallery-caption">24K bars ready for export</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400?text=Jewelry+Making" alt="Jewelry Making">
+                    <div class="gallery-caption">Traditional jewelry craftsmanship</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <video muted loop>
+                        <source src="https://example.com/gold-weighing.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-caption">Precision weighing process</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400?text=Community+School" alt="Community School">
+                    <div class="gallery-caption">CSR: School we supported</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400?text=Trade+Fair" alt="Trade Fair">
+                    <div class="gallery-caption">Our booth at Nigeria Mining Week</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Zamfara Gold Market</h2>
+            <p>Get in touch for gold purchases, partnership inquiries, or to learn more about our services.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Our Office</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p><strong>Headquarters</strong></p>
+                                <p>123 Gold Plaza, Gusau<br>Zamfara State, Nigeria</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p><strong>Phone</strong></p>
+                                <p>+234 812 345 6789 (Office)<br>+234 907 654 3210 (WhatsApp)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p><strong>Email</strong></p>
+                                <p>info@zamfaragold.com<br>sales@zamfaragold.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p><strong>Business Hours</strong></p>
+                                <p>Monday-Friday: 8am-6pm<br>Saturday: 10am-4pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option value="purchase">Gold Purchase</option>
+                                <option value="sale">Gold Sale</option>
+                                <option value="service">Service Inquiry</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d6.123456!3d12.345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDIwJzQ0LjQiTiA2wrAwNyczNy4xIkU!5e0!3m2!1sen!2sng!4v1234567890123!5m2!1sen!2sng" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section id="partner">
+        <div class="container">
+            <h2>Partner With Us</h2>
+            <p>Join our network of trusted gold suppliers, buyers, and service providers.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>For Miners & Suppliers</h3>
+                    <ul>
+                        <li>Guaranteed fair market prices</li>
+                        <li>Weekly payments</li>
+                        <li>Free gold testing</li>
+                        <li>Access to international buyers</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>For Buyers & Investors</h3>
+                    <ul>
+                        <li>Verified gold sources</li>
+                        <li>Complete documentation</li>
+                        <li>Secure storage options</li>
+                        <li>Export facilitation</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>For Service Providers</h3>
+                    <ul>
+                        <li>Refineries: Steady raw material supply</li>
+                        <li>Logistics: Regular shipping contracts</li>
+                        <li>Security: Vault management opportunities</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="margin-top: 50px;">
+                <h3>Vendor Registration</h3>
+                <p>Complete this form to join our network:</p>
+                
+                <form style="margin-top: 20px;">
+                    <div class="form-group">
+                        <label for="vendor-name">Business Name</label>
+                        <input type="text" id="vendor-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vendor-type">You Are A:</label>
+                        <select id="vendor-type" required>
+                            <option value="">Select...</option>
+                            <option value="miner">Miner/Supplier</option>
+                            <option value="buyer">Buyer/Investor</option>
+                            <option value="service">Service Provider</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vendor-desc">Business Description</label>
+                        <textarea id="vendor-desc" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vendor-license">License Number (if applicable)</label>
+                        <input type="text" id="vendor-license">
+                    </div>
+                    
+                    <button type="submit" class="btn">Apply to Partner</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p>Quick answers to common questions about buying, selling, and trading gold with us.</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I verify the purity of gold before buying?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide XRF spectrometer test results for all gold purchases, conducted in your presence if you visit our Gusau office. For remote buyers, we send sealed samples to any accredited lab of your choice at our expense before full payment.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept bank transfers (domestic and international), certified checks, and escrow services for large transactions. Cash payments are limited to ₦5M maximum with proper identification and documentation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you ship gold internationally?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we handle all export documentation and logistics to major markets including Dubai, Turkey, India, and Europe. Minimum export quantity is 1kg for cost efficiency. All exports comply with CBN regulations and include certificates of origin.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can you pay for gold I want to sell?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After purity verification, payment is made within 24 hours for amounts under ₦20M. Larger transactions may take 48-72 hours for compliance checks. We offer instant payment options for trusted partners.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your minimum purchase quantity?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We buy from 10 grams upwards from individual miners. For refined gold products, our retail division sells from 1 gram for jewelry makers and small investors.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do you ensure ethical sourcing?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We only work with licensed miners and cooperatives. Each transaction includes miner identification, community development levy payments, and excludes conflict zones. Our field officers visit mining sites regularly to verify working conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Section -->
+    <section id="investor">
+        <div class="container">
+            <h2>Investor Relations</h2>
+            <p>Opportunities for institutional investors and high-net-worth individuals to participate in Nigeria's gold sector.</p>
+            
+            <div class="investor-model">
+                <h3>Our Business Model</h3>
+                <p>Zamfara Gold Market operates on a low-margin, high-volume model with multiple revenue streams:</p>
+                <ul style="margin-left: 20px; margin-top: 15px; margin-bottom: 30px;">
+                    <li>2-5% margin on gold trading</li>
+                    <li>Service fees for refining, storage, and export</li>
+                    <li>Commissions from buyer-seller matchmaking</li>
+                    <li>Premium pricing for value-added products</li>
+                </ul>
+            </div>
+            
+            <h3>Investment Opportunities</h3>
+            <div class="model-steps">
+                <div class="model-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Gold-Backed Loans</h4>
+                        <p>Provide capital for our inventory purchases with your investment secured by physical gold stored in our vaults. Typical returns: 15-25% annually.</p>
+                    </div>
+                </div>
+                
+                <div class="model-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Equity Participation</h4>
+                        <p>Invest directly in Zamfara Gold Market Ltd for long-term growth. We're considering a 20% equity raise in 2024 to expand refining capacity.</p>
+                    </div>
+                </div>
+                
+                <div class="model-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Joint Ventures</h4>
+                        <p>Partner on specific projects like establishing a local refinery or jewelry manufacturing unit with profit-sharing arrangements.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 50px;">
+                <h3>Investor Benefits</h3>
+                <div class="benefits-grid" style="margin-top: 20px;">
+                    <div class="benefit-card">
+                        <h4>Transparency</h4>
+                        <p>Monthly reports with inventory audits by PwC Nigeria.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>Liquidity</h4>
+                        <p>Gold-backed investments can be exited quarterly.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>Tax Advantages</h4>
+                        <p>Pioneer status benefits for mineral investments.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 50px; background-color: rgba(212, 175, 55, 0.1); padding: 20px; border-radius: 8px;">
+                <h3>Request Investor Package</h3>
+                <p>For accredited investors interested in detailed financials and investment terms, please contact our Investor Relations team:</p>
+                <p style="margin-top: 15px;"><strong>Email:</strong> investors@zamfaragold.com</p>
+                <p><strong>Phone:</strong> +234 809 876 5432 (Investor Line)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Section -->
+    <section id="legal">
+        <div class="container">
+            <h2>Legal & Compliance</h2>
+            <p>Our commitment to lawful and ethical operations in the gold trade.</p>
+            
+            <div class="legal-content">
+                <div class="legal-section">
+                    <h3>Terms and Conditions</h3>
+                    <p>All transactions with Zamfara Gold Market Ltd are governed by Nigerian law and subject to the following terms:</p>
+                    <ul style="margin-left: 20px; margin-top: 15px;">
+                        <li>Prices are fixed at time of contract signing</li>
+                        <li>Payment terms vary by transaction size (50% deposit for orders over ₦10M)</li>
+                        <li>Force majeure clauses apply for government actions or natural disasters</li>
+                        <li>Disputes resolved through Zamfara State arbitration</li>
+                    </ul>
+                </div>
+                
+                <div class="legal-section">
+                    <h3>Privacy Policy</h3>
+                    <p>We collect minimal customer data required for regulatory compliance and transaction processing:</p>
+                    <ul style="margin-left: 20px; margin-top: 15px;">
+                        <li>Identification documents for transactions over ₦5M</li>
+                        <li>Contact information for service delivery</li>
+                        <li>Data is never shared with third parties except as required by law</li>
+                        <li>Right to access and delete your data upon request</li>
+                    </ul>
+                </div>
+                
+                <div class="legal-section">
+                    <h3>Anti-Money Laundering Policy</h3>
+                    <p>As a SCUML-registered entity, we adhere to strict AML/CFT measures:</p>
+                    <ul style="margin-left: 20px; margin-top: 15px;">
+                        <li>Customer Due Diligence (CDD) for all transactions</li>
+                        <li>Enhanced Due Diligence (EDD) for transactions over $10,000</li>
+                        <li>Reporting of suspicious transactions to NFIU</li>
+                        <li>Staff training on AML compliance every 6 months</li>
+                    </ul>
+                    <p style="margin-top: 15px;">We do not accept cash payments over ₦5M without prior approval and documentation.</p>
+                </div>
+                
+                <div class="legal-section">
+                    <h3>KYC Requirements</h3>
+                    <p>To trade with us, you'll need to provide:</p>
+                    <ul style="margin-left: 20px; margin-top: 15px;">
+                        <li>Valid government-issued ID</li>
+                        <li>Proof of address (utility bill or bank statement)</li>
+                        <li>Tax Identification Number (for Nigerian entities)</li>
+                        <li>Mining license (for sellers)</li>
+                        <li>Business registration documents (for companies)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Zamfara<span>Gold</span></div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#services">Services</a>
+                <a href="#market-updates">Market</a>
+                <a href="#contact">Contact</a>
+                <a href="#legal">Legal</a>
+            </div>
+            <p class="copyright">© 2023 Zamfara Gold Market Ltd. All rights reserved. CAC BN 123456789</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Smooth Scrolling for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+        
+        // Product Category Filter
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const productCards = document.querySelectorAll('.product-card');
+        
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Filter products
+                const category = btn.dataset.category;
+                
+                productCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Project Tabs
+        const projectTabs = document.querySelectorAll('.project-tab');
+        const projectContents = document.querySelectorAll('.project-content');
+        
+        projectTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Update active tab
+                projectTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = tab.dataset.tab;
+                
+                projectContents.forEach(content => {
+                    content.classList.remove('active');
+                    if (content.id === tabId) {
+                        content.classList.add('active');
+                    }
+                });
+            });
+        });
+        
+        // Testimonial Slider
+        const testimonials = document.querySelectorAll('.testimonial');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        let currentTestimonial = 0;
+        
+        function showTestimonial(index) {
+            testimonials.forEach(t => t.classList.remove('active'));
+            testimonialDots.forEach(d => d.classList.remove('active'));
+            
+            testimonials[index].classList.add('active');
+            testimonialDots[index].classList.add('active');
+            currentTestimonial = index;
+        }
+        
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showTestimonial(index));
+        });
+        
+        // Auto-rotate testimonials
+        setInterval(() => {
+            let nextTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(nextTestimonial);
+        }, 5000);
+        
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+            });
+        });
+        
+        // Form Submission Handling
+        const forms = document.querySelectorAll('form');
+        
+        forms.forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message. We will contact you shortly.');
+                this.reset();
+            });
+        });
+        
+        // Scroll Animation
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            
+            // Add shadow to header when scrolling
+            if (scrollPosition > 50) {
+                document.querySelector('header').style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.5)';
+            } else {
+                document.querySelector('header').style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.5)';
+            }
+        });
+    </script>
+</body>
+</html>
